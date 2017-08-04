@@ -20,5 +20,8 @@
   "homepage": "https://github.com/sridharkarra/git-test#readme",
   "devDependencies": {
     "lite-server": "^2.3.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6"
   }
 }
