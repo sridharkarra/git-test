@@ -7,14 +7,14 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="css/styles.css">
     <title>Training Site</title>
 </head>
 <body>
 
     <header class="jumbotron">
         <div class="container">
-            <div class="row">
+            <div class="row row-heaer">
                 <div class="col-12 col-sm-8">
                     <h1>Bootstrap Training Site</h1>
                     <p>This is meant as a sand box area for BootStrap learning</p>
@@ -26,15 +26,15 @@
     </header>
 
     <div class="container">
-        <div class="row">
-            <div class="col-sm-4 push-sm-8 col-md-3 push-md-9">
+        <div class="row row-content align-items-center">
+            <div class="col-sm-4 col-md-3 flex-last">
                 <h3>How many time zones are there</h3>
                 <p>Given a 24-hour day and 360 degrees of longitude around the Earth,
                     it is obvious that the world's standard time zones have to be 15 degrees wide, on average.
                     Some sources claim there are 24 standard time zones, while others say there are 25 time zones.
                 </p>
             </div>
-            <div class="col-sm pull-sm-4 col-md pull-md-3">
+            <div class="col-sm col-md flex-first">
                 <h2>How many time zones are there</h2>
                 <p>Given a 24-hour day and 360 degrees of longitude around the Earth,
                     it is obvious that the world's standard time zones have to be 15 degrees wide, on average.
@@ -43,7 +43,7 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="row row-content align-items-center">
             <div class="col-sm-4 col-md-3">
                 <h3>Who was first to walk on the moon?</h3>
                 <p>Apollo 11 was the spaceflight that landed the first humans on the Moon,
@@ -62,8 +62,8 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-sm-4 push-sm-4 col-md-3 push-md-9">
+        <div class="row row-content align-items-center">
+            <div class="col-sm-4 col-md-3 flex-last">
                 <h3>Why is the marathon 26 miles and 385 yards?</h3>
                 <p>
                     The marathon is a long-distance running event with an
@@ -73,7 +73,7 @@
                     a messenger from the Battle of Marathon to Athens.
                 </p>
             </div>
-            <div class="col-sm pull-sm-8 col-md pull-md-3">
+            <div class="col-sm col-md flex-first">
                 <h2>Why is the marathon 26 miles and 385 yards?</h2>
                 <p>
                     The marathon is a long-distance running event with an
@@ -84,15 +84,16 @@
                 </p>
             </div>
         </div>
+    </div>
 
-        <footer>
+        <footer class="footer">
             <div class="container">
                 <div class="row">
                     <div class="col-5 offset-1 col-sm-2">
-                        <ul>
-                            <li><a href="www.google.com">Google</a></li>
-                            <li><a href="www.finance.google.com">Google Finance</a></li>
-                            <li><a href="www.cnn.com">CNN</a></li>
+                        <ul class="list-unstyled">
+                            <li><a href="www.google.com">Home</a></li>
+                            <li><a href="www.finance.google.com">About</a></li>
+                            <li><a href="www.cnn.com">Contact</a></li>
                         </ul>
                     </div>
 
@@ -102,22 +103,21 @@
                         </div>
                     </div>
 
-                    <div class="col col-sm-4">
-                        <ul>
+                    <div class="col col-sm-4 align-self-center">
+                        <ul class="list-unstyled" style="text-align:center">
                             <li><a href="www.google.com">Google</a></li>
                             <li><a href="www.finance.google.com">Google Finance</a></li>
                             <li><a href="www.cnn.com">CNN</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row justify-content-center">
                     <div class="col-auto">
                         <p>&copy; Copyright 2017</p>
                     </div>
                 </div>
             </div>
         </footer>
-    </div>
 
 
 
