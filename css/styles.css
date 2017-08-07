@@ -1,3 +1,36 @@
+body{
+    padding:50px 0px;
+    z-index: 0;
+    color:darkblue;
+}
+
+.navbar-inverse, footer{
+    background-color: midnightblue;
+    font-family: "Montserrat Alternates";
+    color: #fff;
+
+}
+
+.navbar-inverse .navbar-nav .nav-link{
+    color: #fff;
+}
+
+
+.jumbotron {
+    font-family: "Roboto", 'Cizel Decorative';
+    font-size: 22px;
+    padding: 70px 30px;
+    margin: 0px auto;
+    background: midnightblue;
+    color: floralwhite;
+    text-align: left;
+}
+
+#main{
+    margin-top: 3em;
+    margin-bottom:10%;
+}
+
 .row-header{
     margin: 0px auto;
     padding: 0px auto;
@@ -11,30 +44,21 @@
 }
 
 .footer{
-    background-color: #D1C4E9;
+    background-color: midnightblue;
     margin: 0px auto;
     padding: 20px 0px;
 }
 
-.jumbotron {
-    font-family: "Roboto", 'Cizel Decorative';
-    font-size: 22px;
-    padding: 70px 30px;
-    margin: 0px auto;
-    background: midnightblue;
-    /*background: url("http://qwett.com/wp-content/uploads/MacBook-Black-Background.jpg") center fixed no-repeat;*/
-    background-size: cover;
-    color: lightblue;
-    text-align: center;
-}
+/*.work-exp{*/
+    /*background: url("htp://qwett.com/wp-content/uploads/MacBook-Black-Background.jpg") center fixed no-repeat;*/
+    /*background-size: cove;*/
+/*}*/
 
-body{
-    padding:50px 0px;
-    z-index: 0;
-    color:darkblue;
+
+.form-group.required .col-form-label:after {
+    content:"*";
+    color:red;
 }
 
 
-.navbar-inverse{
-    background-color: midnightblue;
-}
+
