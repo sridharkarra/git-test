@@ -1,0 +1,193 @@
+
+#output-movies-criteria{
+    font-size:20px;
+    padding: 2% 0;
+    margin: 1% auto;
+    text-align:center;
+}
+
+#output-places, #output-movies{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+    justify-content:space-around;
+    text-align:left;
+}
+
+.movie-image-container{
+    margin:2% auto;
+    background:steelblue;
+    border:2px solid steelblue;
+    border-radius:1em;
+    padding:1em;
+    width:100%;
+
+}
+
+
+#output-places  img, #output-movies img{
+    width:10em;
+    height:10em;
+    float:left;
+}
+
+.movie-details-container{
+    /*font-family: 'Montserrat Alternates', sans-serif;*/
+    color:#fff;
+    text-align:justify;
+    font-size:15px;
+    display: flex;
+    flex-direction:column;
+    padding-left:5%;
+}
+
+.favplaces,.favmovies{
+    text-align:center;
+}
+
+
+.favmovies >p, .favplaces>p{
+    font-size:25px;
+}
+
+#search-place, #search-movie, #search-button, #search-age, #search-world, #search, #clear-button, #countryPop, #countryName, #year,#age{
+    font-size: 15px;
+    text-align:center;
+    margin-top : 1em;
+}
+
+#search-button, #clear-button{
+
+}
+
+.worldPop button{
+    margin-bottom:2em;
+}
+
+
+#output-pop,#output-pop-age{
+    margin-bottom:2em;
+}
+
+
+
+/*button {*/
+    /*border:2px solid black;*/
+    /*width:10%;*/
+    /*font-size:20px;*/
+    /*color:black;*/
+/*}*/
+
+/*input, textarea{*/
+    /*padding:10px 50px;*/
+    /*margin: 10px 20px;*/
+    /*width:30%;*/
+    /*color:black;*/
+/*}*/
+
+
+/*input:valid{*/
+    /*border:2px solid green;*/
+/*}*/
+
+/*  input:invalid{
+  border:2px solid red;
+}  */
+
+
+
+/*.fa-facebook {*/
+    /*background: #3B5998;*/
+    /*color: white;*/
+/*}*/
+
+/*.fa-github {*/
+    /*background: #3B5998;*/
+    /*color: white;*/
+/*}*/
+
+/*.fa-google {*/
+    /*background: #dd4b39;*/
+    /*color: white;*/
+/*}*/
+
+/*.fa-linkedin {*/
+    /*background: #3B5998;*/
+    /*color: white;*/
+/*}*/
+
+
+/* Calculator app */
+
+.calc-container{
+    background-color:#feffbe;
+    margin: 15% 42%;
+    border-style: solid;
+    text-align:center;
+}
+
+/* Number Guess Game */
+
+#numguess{
+    background-color: white;
+    width:30%;
+    margin: 10% auto;
+    border:2px solid darkslategray;
+    border-radius: 1em;
+}
+
+.ng-header{
+    font-family: 'Roboto', sans-serif;
+    font-size:20px;
+    color:saddlebrown;
+    padding: 3%;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.ng-label{
+    display:block;
+    font-family: 'Roboto', sans-serif;
+    font-size:15px;
+    color:saddlebrown;
+    margin:0 30px;
+    padding-bottom: 1em;
+}
+
+#max_tries,#guess,#tries {
+    width:20%;
+    text-align: center;
+}
+#checkBtn{
+    width:80px;
+    margin: 20px 10px 20px 50px;
+}
+
+#resetBtn, #playBtn{
+    width:80px;
+    visibility: hidden;
+    margin: 20px 10px;
+}
+
+#lost{
+    margin: 20px 10px;
+    color:red;
+}
+
+/* frog and ant */
+
+#startgame{
+    margin-right: 10px;
+    margin-bottom: 5px;
+    background-color: deepskyblue;
+    font-weight: bold;
+    float: left;
+}
+
+.game label {
+    color: black;
+    font-weight: bold;
+    display: block;
+    width: 150px;
+    float: right;
+}

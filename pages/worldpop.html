@@ -1,0 +1,46 @@
+<!-- World Population-->
+
+<head>
+    <script type="text/javascript" src="../scripts/worldpop.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+</head>
+
+<body ng-app="myApp" ng-controller="myCtrl">
+    <div class="container worldPop">
+
+        <div class="row">
+            <ol class="col-12 breadcrumb">
+                <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="../index.html#/projects">Projects</a></li>
+                <li class="breadcrumb-item active">World Population Guess</li>
+            </ol>
+        </div>
+
+        <div class="worldPop">
+
+            <div>Population of every country in the world</div>
+            <button class="btn btn-primary" id="search-world">Click Here</button>
+
+            <div id="output-pop-world"></div>
+            <div>Population of <input ng-model="CountryName" id="countryPop" placeholder = "Enter country name" required/></div>
+            <button class="btn btn-primary" id="search">Search</button>
+
+            <div id="output-pop"></div>
+
+            <div>Search by Country and Year</div>
+
+            <input ng-model="name" id="countryName" placeholder="Enter Country Name" required/>
+            <input ng-model="year"  id="year" placeholder="Enter Year"/>
+            <!--<input ng-model="age"  id="age" placeholder="Enter Age"/>-->
+            <br>
+            <button class="btn btn-primary" id="search-age">Search</button>
+            <button class="btn btn-primary" id="clear-button">Clear</button>
+            <div id="output-pop-age"></div>
+        </div>
+    </div>
+
+</body>
