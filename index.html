@@ -12,8 +12,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/bootstrap/css/bootstrap-social.css">
+    <link rel="stylesheet" href="css/bootstrap-social.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Cinzel Decorative' rel='stylesheet'>
     <title>Training Site</title>
 </head>
 <body ng-app="myApp">
@@ -23,11 +24,11 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="#">Bootstrap Training</a>
-            <div class="collapse navbar-collapse" id="Navbar">
+            <a class="navbar-brand" href="#">Sridhar Karra</a>
+            <div class="collapse navbar-collapse justify-content-end" id="Navbar">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-home"></span> Home</a></li>
-                    <li><a class="nav-link" href="#profile"><span class="fa fa-user"></span> Profile</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#profile"><span class="fa fa-user"></span> Profile</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects"><span class="fa fa-tasks"></span> Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
@@ -35,36 +36,24 @@
         </div>
     </nav>
 
-    <header class="jumbotron">
-        <div class="container">
-            <div class="row row-header">
-                <div class="col-12 col-sm-8">
-                    <h1>Bootstrap Training Site</h1>
-                    <p>This is meant as a sand box area for BootStrap learning</p>
-                </div>
-                <div class="col col-sm">
-                </div>
-            </div>
-        </div>
-    </header>
 
 
     <main ng-view id="main"></main>
 
-        <footer class="footer fixed-bottom">
-            <div class="container">
-                    <div class="align-self-center">
-                        <ul class="list-unstyled" style="text-align:center">
-                            <li><a href="www.linkedin.com/karrasridhar"><span class="fa fa-linkedin-square fa-lg"></span></a></li>
-                            <li><a href="https://www.facebook.com/catchsrikarra"><span class="fa fa-facebook-square fa-lg" fa-lg></span></a></li>
-                            <li><a href="www.github.com/sridharkarra"><span class="fa fa-github-square fa-lg"></span></a></li>
-                        </ul>
-                    </div>
-                    <div style="text-align:center">
-                        <p>Developed by Sridhar Karra. &copy; Copyright 2017</p>
-                    </div>
+
+    <footer class="footer fixed-bottom">
+        <div class="container">
+            <div style="text-align:center">
+                <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/karrasridhar"><i class="fa fa-linkedin"></i></a>
+                <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/catchsrikarra"><i class="fa fa-facebook"></i></a>
+                <a class="btn btn-social-icon btn-github" href="http://www.github.com/sridharkarra"><i class="fa fa-github"></i></a>
+                <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
             </div>
-        </footer>
+            <div style="text-align:center">
+                <p>Developed by Sridhar Karra. &copy; Copyright 2017</p>
+            </div>
+        </div>
+    </footer>
 
 
 

@@ -16,18 +16,25 @@
     padding: 20px 0px;
 }
 
-.jumbotron{
+.jumbotron {
+    font-family: "Roboto", 'Cizel Decorative';
+    font-size: 22px;
     padding: 70px 30px;
     margin: 0px auto;
-    background: #9575cd;
-    color: floralwhite;
+    background: midnightblue;
+    /*background: url("http://qwett.com/wp-content/uploads/MacBook-Black-Background.jpg") center fixed no-repeat;*/
+    background-size: cover;
+    color: lightblue;
+    text-align: center;
 }
 
 body{
     padding:50px 0px;
     z-index: 0;
+    color:darkblue;
 }
 
+
 .navbar-inverse{
-    background-color: #512DA8;
+    background-color: midnightblue;
 }
