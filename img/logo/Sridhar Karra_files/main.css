@@ -51,7 +51,7 @@
     font-size:25px;
 }
 
-#search-place, #search-movie, #search-button, #search-age, #search-world, #search, #clear-button, #clear, #countryPop, #countryName, #year,#age{
+#search-place, #search-movie, #search-button, #search-age, #search-world, #search, #clear-button, #countryPop, #countryName, #year,#age{
     font-size: 15px;
     text-align:center;
     margin-top : 1em;
@@ -117,6 +117,15 @@
     /*color: white;*/
 /*}*/
 
+
+/* Calculator app */
+
+.calc-container{
+    background-color:#feffbe;
+    margin: 15% 42%;
+    border-style: solid;
+    text-align:center;
+}
 
 /* Number Guess Game */
 

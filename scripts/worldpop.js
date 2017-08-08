@@ -5,7 +5,7 @@
 //$(document).ready(function() {
 
 
-    $("#clear-button").click(clearInfo);
+    $("#clear").click(clearInfo);
     $("#search-age").click(getCurrentPop);
     $("#search").click(getCountryPop);
     $("#search-world").click(getCountryList)
@@ -14,7 +14,7 @@
         document.getElementById("countryPop").value = "";
         document.getElementById("countryName").value = "";
         document.getElementById("year").value = "";
-        document.getElementById("age").value = "";
+        //document.getElementById("age").value = "";
         $("#output-pop").empty();
         $("#output-pop-age").empty();
         $("#output-pop-world").empty();
@@ -30,15 +30,13 @@
     });
 
     function getCountryList(){
-        $.ajax({type:"GET",dataType:"json", url: "http://api.population.io:443/1.0/countries/"})
+        $.ajax({type:"GET",dataType:"json", url: "http://api.population.io:80/1.0/countries/"})
             .done(function(list) { //[0]
-                console.log(list.countries.length)
+                //console.log(list.countries.length)
                 for (var i = 0; i < list.countries.length; i++) {
-                    console.log(list.countries[i])
-                   // $("#output-pop-world").append("<h3>" + countryname[0].toUpperCase() + countryname.slice(1).toLowerCase() + "</h3>")
-                    $.ajax("https://api.population.io:80/1.0/population/" + list.countries[i] + "/today-and-tomorrow/")
+                    $.ajax("http://api.population.io:80/1.0/population/" + list.countries[i] + "/today-and-tomorrow/")
                         .done(function(data) {
-                            $("#output-pop-world").append("<h3>" + list.countries[i] + "=" + data.total_population[0].population + "</h3>");
+                            $("#output-pop-world").append("<h3>" +  "=" + data.total_population[0].population + "</h3>");
 
                         })
                         .fail(function(error) {
@@ -70,7 +68,7 @@
 
 
 
-    function getCurrentPop(/*searchMovie*/) {
+    function getCurrentPop() {
         $("#output-pop-age").empty();
         var searchCountry = $("#countryName").val();
         searchCountry = searchCountry[0].toUpperCase() + searchCountry.slice(1).toLowerCase();

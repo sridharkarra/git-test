@@ -23,7 +23,6 @@ function reset(){
 
 function number(arg) {
   val = val + arg.toString();
-  //console.log("val,tmp,memory", parseInt(val),tmp,memory);
   display(parseInt(val));
 }
 
@@ -34,54 +33,48 @@ function operator(text) {
   display(a);
   tmp = tmp + parseInt(val);
   val = 0;
-  // console.log("val,tmp" , val, tmp);
-  //display(parseInt(tmp));
   b++;
 }
 
 function calculate(){
-  if(val == ' ') {
-    alert("Select a number");
+  if(val === ' ') {
+    $('#missing').fadeIn().delay(5000).fadeOut();
   }
-  else if (a == '+'){
+  else if (a === '+'){
     memory = memory + parseInt(tmp) + parseInt(val);
     display((memory).toFixed(2));
-    // console.log("val,tmp,memory" , val, tmp,memory);
     tmp = 0;
     val = 0;
   }
-  else if (a == '-'){
+  else if (a === '-'){
     memory = memory - (parseInt(val) - parseInt(tmp));
     display((memory).toFixed(2));
-    // console.log("val,tmp,memory" , val, tmp,memory);
     tmp = 0;
     val = 0;
   }
-  else if (a == '*'){
-    if (b == 1) {
-      memory = 1 * parseInt(tmp) * parseInt(val);
+  else if (a === '*'){
+    if (b === 1) {
+      memory = parseInt(tmp) * parseInt(val);
       display((memory).toFixed(2));
-      // console.log("val,tmp,memory", val, tmp, memory);
       tmp = 0;
       val = 0;
     }
     else{
       memory = memory * parseInt(val);
       display((memory).toFixed(2));
-      //  console.log("val,tmp,memory", val, tmp, memory);
       tmp = 0;
       val = 0;
     }
   }
-  else if (a =='/'){
-    if (parseInt(val) == '0'){
+  else if (a ==='/'){
+    if (parseInt(val) === '0'){
       display("Cannot divide by Zero");
+      $('#zerodiv').fadeIn().delay(5000).fadeOut();
     }
     else{
-      if(b == 1){
+      if(b === 1){
         memory = tmp / val;
         display((memory).toFixed(2));
-        //  console.log("val,tmp,memory" , val, tmp,memory);
         tmp = 0;
         val = 0;
       }
@@ -91,7 +84,6 @@ function calculate(){
         //  console.log("val,tmp,memory" , val, tmp,memory);
         tmp = 0;
         val = 0;
-        // console.log("val,tmp,memory" , parseInt(val), tmp,memory);
       }
     }
   }

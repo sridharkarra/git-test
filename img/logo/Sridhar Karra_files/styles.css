@@ -2,7 +2,6 @@ body{
     padding:50px 0px;
     z-index: 0;
     color:darkblue;
-
 }
 
 .navbar-inverse, footer{
@@ -18,7 +17,7 @@ body{
 
 
 .jumbotron {
-    font-family: "Montserrat Alternates", 'Cizel Decorative';
+    font-family: "Roboto", 'Cizel Decorative';
     font-size: 22px;
     padding: 70px 30px;
     margin: 0px auto;
@@ -50,11 +49,6 @@ body{
     padding: 20px 0px;
 }
 
-.footer a{
-    margin-left:2%;
-
-}
-
 /*.work-exp{*/
     /*background: url("htp://qwett.com/wp-content/uploads/MacBook-Black-Background.jpg") center fixed no-repeat;*/
     /*background-size: cove;*/
@@ -74,12 +68,11 @@ body{
 .logobox {
     display: block;
     margin-top: .7em;
-    height: 200px;
+    height: 150px;
 }
 
 .logobox img {
     height: 100px;
-    margin-bottom:20px;
 }
 
 img {

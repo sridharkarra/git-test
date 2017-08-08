@@ -1,5 +1,11 @@
 <!-- Projects  page-->
 
+<head>
+    <script type="text/javascript" src="../scripts/calculator.js" defer></script>
+    <script type="text/javascript" src="../scripts/get-movies.js" defer></script>
+    <script type="text/javascript" src="../scripts/worldpop.js" defer></script>
+</head>
+
 <div class="container projects">
     <div class="row">
         <ol class="col-12 breadcrumb">
@@ -9,23 +15,111 @@
     </div>
 
     <ul class="list-unstyled">
-        <li><a href="#favmovies">Movie Search</a></li>
-        <li><a href="#numberguess">Number Guess</a></li>
-        <li><a href="#calculator">Calculator</a></li>
-        <li><a href="#worldPop">World Population</a></li>
+        <!--<li><a href="#favmovies">Movie Search</a></li>-->
+        <!--<li><a href="#numberguess">Number Guess</a></li>-->
+        <!--<li><a href="#calculator">Calculator</a></li>-->
+        <!--<li><a href="#worldPop">World Population</a></li>-->
     </ul>
 
-    <div class="view overlay hm-white-slight">
-        <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="img-fluid" alt="">
+    <div class="row card-deck">
+        <div class="col-12 col-sm-3">
+            <div class="card h-100">
+                <h3 class="card-header card-primary text-white text-center">Calculator</h3>
+                <div class="card-block text-center">
+                    <input class="bg-info" type="text" name="Input" style="text-align: center" size="20" readonly>
+                    <p></p>
+                    <Input class="btn btn-info" type="button" name="one" value="1" onclick="number(1)">
+                    <Input class="btn btn-info" type="button" name="two" value="2" onclick="number(2)">
+                    <Input class="btn btn-info" type="button" name="three" value="3" onclick="number(3)">
+                    <Input class="btn btn-info" type="button" name="plus" value="+" onclick="operator('+')">
+                    <p></p>
+                    <Input class="btn btn-info" type="button" name="four" value="4" onclick="number(4)">
+                    <Input class="btn btn-info" type="button" name="five" value="5" onclick="number(5)">
+                    <Input class="btn btn-info" type="button" name="six" value="6" onclick="number(6)">
+                    <Input class="btn btn-info" type="button" name="minus" value="-" onclick="operator('-')">
+                    <p></p>
+                    <Input class="btn btn-info" type="button" name="seven" value="7" onclick="number(7)">
+                    <Input class="btn btn-info" type="button" name="eight" value="8" onclick="number(8)">
+                    <Input class="btn btn-info" type="button" name="nine" value="9" onclick="number(9)">
+                    <Input class="btn btn-info" type="button" name="multiply" value="*" onclick="operator('*')">
+                    <p></p>
+                    <Input class="btn btn-info" type="button" name="reset" value="C" onclick="reset()">
+                    <Input class="btn btn-info" type="button" name="zero" value="0" onclick="number(0)">
+                    <Input class="btn btn-info" type="button" name="result" value="=" onclick="calculate()">
+                    <Input class="btn btn-info" type="button" name="divide" value="/" onclick="operator('/')">
+                    <p></p>
+                    <div id="missing" class="collapse" style="color:red">
+                        Don't you know how to use a calculator. Try again.
+                    </div>
+                    <div id="zerodiv" class="collapse" style="color:red">
+                        You really need a calculator.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-9">
+            <div class="card h-100">
+                <h3 class="card-header card-primary text-white text-center">World Population</h3>
+                <div class="card-block text-center">
+                    <div class="container worldPop">
+                        <div class="worldPop">
+                            <!--<div>Population of every country in the world</div>-->
+                            <!--<button class="btn btn-primary" id="search-world">Click Here</button>-->
+
+                            <div id="output-pop-world"></div>
+                            <div>Population of <input ng-model="CountryName" id="countryPop" placeholder = "Enter country name" required/></div>
+                            <button class="btn btn-primary" id="search">Search</button>
+
+                            <div id="output-pop"></div>
+
+                            <div>Search by Country and Year</div>
+
+                            <input ng-model="name" id="countryName" placeholder="Enter Country Name" required/>
+                            <input ng-model="year"  id="year" placeholder="Enter Year"/>
+                            <!--<input ng-model="age"  id="age" placeholder="Enter Age"/>-->
+                            <br>
+                            <button class="btn btn-primary" id="search-age">Search</button>
+                            <button class="btn btn-primary" id="clear">Clear</button>
+                            <div id="output-pop-age"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <!--Card content-->
-    <div class="card-body">
-        <!--Title-->
-        <h4 class="card-title">Search Movies</h4>
-        <!--Text-->
-        <p class="card-text">Search for any movie from huge collection of database</p>
-        <!--<a href="#" class="btn btn-primary">Button</a>-->
+    <div class="row">
+        <div class="col-12 col-sm">
+            <div class="card h-100">
+                <h3 class="card-header card-primary text-white text-center">Movie Search</h3>
+                <div class="card-block text-center">
+                    <div class=" favmovies">
+                        <input type="text" id="search-movie" placeholder="Enter movie name" required/>
+                        <br>
+                        <button class="btn btn-primary" id="search-button">Search</button>
+                        <button class="btn btn-primary"  id="clear-button">Clear</button>
+                        <!--<p>or, Search from following</p>-->
+                        <!--<select id="search-dropdown">-->
+                        <!--<option value=" "></option>-->
+                        <!--<option value="popular-movies">Popular Movies</option>-->
+                        <!--<option value="popular-kids-movies">Popular Kids Movies</option>-->
+                        <!--<option value="highest-rated-movies">Highest Rated Movies rated R</option>-->
+                        <!--</select>-->
+                        <div id="output-movies-criteria"></div>
+                        <div id="output-movies">
+                            <!--<div id="output-movies-images"></div>-->
+                            <!--<div id="output-movies-details"></div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+
+
+
+<!--</div>-->
 </div>
 
